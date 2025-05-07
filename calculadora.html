@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Costos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Calculadora de Costos</h1>
+  </header>
+
+  <section>
+    <form oninput="total.value = parseFloat(cantidad.value) * parseFloat(precio.value)">
+      <label>Cantidad:<br><input type="number" name="cantidad" value="1" min="1"></label><br><br>
+      <label>Precio unitario:<br><input type="number" name="precio" value="1000" min="0"></label><br><br>
+      <label>Total:<br><output name="total">1000</output></label><br><br>
+    </form>
+  </section>
+</body>
+</html>

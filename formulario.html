@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Cotización</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Formulario de Cotización</h1>
+  </header>
+
+  <section>
+    <form>
+      <label>Nombre:<br><input type="text" name="nombre" required></label><br><br>
+      <label>Correo electrónico:<br><input type="email" name="correo" required></label><br><br>
+      <label>Servicio requerido:<br>
+        <select name="servicio" required>
+          <option value="">Seleccione una opción</option>
+          <option value="asesoria">Asesoría</option>
+          <option value="diseño">Diseño web</option>
+          <option value="soporte">Soporte técnico</option>
+        </select>
+      </label><br><br>
+      <label>Comentarios:<br><textarea name="comentarios" rows="5"></textarea></label><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</body>
+</html>
